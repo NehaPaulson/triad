@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FramIT</title>
+</head>
+<body>
+  
 <div class="div">
     <div class="div-2">
       <div class="div-3">
@@ -130,7 +139,11 @@
       <div class="div-78">TechStack</div>
       <input type="text"  class="div-79" placeholder="enter the techstack">
       
-      <div class="div-80"><input type="Submit"></div>
+      <button class="button login__submit">
+        <span class="button__text">submit</span>
+        <i class="button__icon fas fa-chevron-right"></i>
+      </button>
+  
       <div class="div-81" id="work">Turn your ideas into reality</div>
       <div class="div-82">
         <div class="div-83">
@@ -198,10 +211,18 @@
       <input type="text" class="div-130" placeholder="your skills">
       <div class="div-129">Links to your project repostries</div>
       <input type="hyperlink" class="div-130"placeholder="projects">
-      <div class="div-131"><input type="Submit"></div>
+      <button class="button login__submit">
+        <span class="button__text">submit</span>
+        <i class="button__icon fas fa-chevron-right"></i>
+      </button>
+  
       <div class="div-132">Any Queries</div>
       <input type="text" class="div-133" placeholder="shoot your doubts">
-      <div class="div-134"><input type="Submit"></div>
+      <button class="button login__submit">
+        <span class="button__text">submit</span>
+        <i class="button__icon fas fa-chevron-right"></i>
+      </button>
+  
       <div class="div-135" id="contact">Contact Us</div>
       <div class="div-136">
         <div class="div-137">
@@ -243,10 +264,18 @@
       </div>
     </div>
   </div>
+
+
   <style>
+  .div-12{
+    color: #091234;
+  }
     .div a{
     text-decoration: none;
     color: #000000;
+  }
+  .div-14 a{
+    color: #fff;
   }
   .div a:hover{
     background:#172760 ;
@@ -255,6 +284,39 @@
     background:#2c3c77 ;
     border-radius: 9px;
   }
+  .login__submit {
+      background: #132a79;
+      background-size: 98px;
+      font-size: 14px;
+      margin-top: 30px;
+      padding: 16px 20px;
+      border-radius: 26px;
+      border: 1px solid#aebceb;
+      text-transform: uppercase;
+      font-weight: 700;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      color: #fff;
+      box-shadow: 0px 2px 2px #6e8ae6;
+      cursor: pointer;
+      transition: .2s;
+      margin-left: 65px;
+    }
+    
+    .login__submit:active,
+    .login__submit:focus,
+    .login__submit:hover {
+      border-color: #132a79;
+      outline: none;
+    }
+    
+    .button__icon {
+      font-size: 24px;
+      margin-left: 69px;
+      color: #132a79;
+    }
+
     .div {
       background-color: #fffff0;
       display: flex;
@@ -414,6 +476,8 @@
       margin-top: 36px;
       color: #fff;
       padding: 18px 53px 11px;
+      text-align: center;
+  
     }
     @media (max-width: 991px) {
       .div-14 {
@@ -1243,7 +1307,8 @@
     }
     .div-76 {
       font-family: Inria Sans, sans-serif;
-      margin: 21px 0 0 13px;
+      margin: 21px 0 0 12px;
+
     }
     @media (max-width: 991px) {
       .div-76 {
@@ -1261,7 +1326,7 @@
     .div-78 {
       color: #000;
       align-self: start;
-      margin: 19px 0 0 109px;
+      margin: 19px 0 0 75px;
       font: 400 36px Inria Sans, sans-serif;
     }
     @media (max-width: 991px) {
@@ -1272,7 +1337,7 @@
     .div-79 {
       border-radius: 20px;
       background-color: rgba(217, 217, 217, 0.46);
-      align-self: center;
+      margin-left: 72PX;
       margin-top: 9px;
       width: 1042px;
       max-width: 100%;
@@ -1871,7 +1936,7 @@
       color: #000;
       align-self: start;
       white-space: nowrap;
-      margin: 21px 0 0 125px;
+      margin: 21px 0 0 80px;
       font: 400 36px Inria Sans, sans-serif;
     }
     @media (max-width: 991px) {
@@ -1891,7 +1956,7 @@
     .div-129 {
       color: #000;
       align-self: start;
-      margin: 19px 0 0 125px;
+      margin: 19px 0 0 80px;
       font: 400 36px Inria Sans, sans-serif;
     }
     @media (max-width: 991px) {
@@ -1902,7 +1967,7 @@
     .div-130 {
       border-radius: 20px;
       background-color: rgba(217, 217, 217, 0.46);
-      align-self: center;
+      margin-left: 72px;
       width: 1042px;
       max-width: 100%;
       height: 79px;
@@ -2014,7 +2079,7 @@
       aspect-ratio: 0.92;
       object-fit: auto;
       object-position: center;
-      width: 93px;
+      width: 80px;
       flex-grow: 1;
     }
     @media (max-width: 991px) {
@@ -2038,7 +2103,7 @@
       aspect-ratio: 1.03;
       object-fit: auto;
       object-position: center;
-      width: 67px;
+      width: 64px;
       align-self: stretch;
       margin: auto 0;
     }
@@ -2097,5 +2162,9 @@
         margin-top: 40px;
       }
     }
+    .button login__submit{
+      width: 60px;
+    }
   </style>
-  
+  </body>
+  </html>

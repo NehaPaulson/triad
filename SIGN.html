@@ -1,109 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signin</title>
+</head>
+<body>
+  
 <div class="div">
-    <div class="div-2">
-      <div class="div-3">Welcome Back!!</div>
-      <div class="div-4">Email Id:</div>
-      <div class="div-5"></div>
-      <div class="div-6">Password:</div>
-      <div class="div-7"></div>
-      <div class="div-8">Submit</div>
-    </div>
+    <div class="div-2">Welcome!!</div>
+    <div class="div-3">Full Name</div>
+    <div class="div-4"><input type="text" class="div-4" placeholder="enter full name"></div>
+    <div class="div-5">Email Id:</div>
+    <div class="div-6"><input type="text" class="div-4" placeholder="enter mail id"></div>
+    <div class="div-7">Password:</div>
+    <div class="div-8"><input type="password" class="div-4" placeholder="enter a strong password"></div>
+    <button class="button login__submit">
+      <span class="button__text">submit</span>
+      <i class="button__icon fas fa-chevron-right"></i>
+    </button>
   </div>
+
   <style>
-    .div {
-      background-color: rgba(217, 217, 217, 0.46);
-      display: flex;
-      justify-content: center;
+    .login__submit {
+      background: #132a79;
+      font-size: 14px;
+      margin-top: 30px;
+      padding: 16px 20px;
+      border-radius: 26px;
+      border: 1px solid#aebceb;
+      text-transform: uppercase;
+      font-weight: 700;
+      
       align-items: center;
+      text-align: center;
+      width: 100%;
+      color: #fff;
+      box-shadow: 0px 2px 2px #6e8ae6;
+      cursor: pointer;
+      transition: .2s;
+    }
+    
+    .login__submit:active,
+    .login__submit:focus,
+    .login__submit:hover {
+      border-color: #132a79;
+      outline: none;
+    }
+    
+    .button__icon {
+      font-size: 24px;
+      margin-left: auto;
+      color: #132a79;
+    }
+
+    .div {
+      display: flex;
+      max-width: 600px;
+      flex-direction: column;
       font-size: 28px;
       color: #000;
       font-weight: 400;
-      padding: 50px 60px;
+      white-space: nowrap;
+      padding: 0 20px;
     }
     @media (max-width: 991px) {
       .div {
-        padding: 0 20px;
+        white-space: initial;
       }
     }
     .div-2 {
-      display: flex;
-      margin-top: 82px;
-      width: 603px;
-      max-width: 100%;
-      flex-direction: column;
-    }
-    @media (max-width: 991px) {
-      .div-2 {
-        margin-top: 40px;
-      }
-    }
-    .div-3 {
       align-self: center;
       font: 64px Inria Sans, sans-serif;
     }
     @media (max-width: 991px) {
-      .div-3 {
-        max-width: 100%;
+      .div-2 {
         font-size: 40px;
       }
     }
-    .div-4 {
+    .div-3 {
       font-family: Inria Sans, sans-serif;
       align-self: start;
-      white-space: nowrap;
-      margin: 47px 0 0 10px;
+      margin-top: 26px;
     }
     @media (max-width: 991px) {
-      .div-4 {
-        margin-top: 40px;
+      .div-3 {
         white-space: initial;
       }
     }
-    .div-5 {
+    .div-4 {
       border-radius: 30px;
       background-color: rgba(163, 157, 157, 0.22);
+      min-height: 59px;
       margin-top: 6px;
-      height: 72px;
+      width: 100%;
+    }
+    @media (max-width: 991px) {
+      .div-4 {
+        max-width: 100%;
+      }
+    }
+    .div-5 {
+      font-family: Inria Sans, sans-serif;
+      align-self: start;
+      margin-top: 13px;
     }
     @media (max-width: 991px) {
       .div-5 {
-        max-width: 100%;
+        white-space: initial;
       }
     }
     .div-6 {
-      font-family: Inria Sans, sans-serif;
-      align-self: start;
-      margin: 31px 0 0 10px;
-    }
-    .div-7 {
       border-radius: 30px;
       background-color: rgba(163, 157, 157, 0.22);
+      min-height: 59px;
       margin-top: 6px;
-      height: 72px;
+      width: 100%;
     }
     @media (max-width: 991px) {
-      .div-7 {
+      .div-6 {
         max-width: 100%;
       }
     }
+    .div-7 {
+      font-family: Inria Sans, sans-serif;
+      align-self: start;
+      margin-top: 20px;
+    }
     .div-8 {
+      border-radius: 30px;
+      background-color: rgba(163, 157, 157, 0.22);
+      min-height: 59px;
+      margin-top: 6px;
+      width: 100%;
+    }
+    @media (max-width: 991px) {
+      .div-8 {
+        max-width: 100%;
+      }
+    }
+    .div-9 {
       border-radius: 30px;
       background-color: #132a79;
       align-self: center;
-      margin-top: 36px;
-      width: 390px;
+      margin-top: 40px;
+      width: 321px;
       max-width: 100%;
       justify-content: center;
       align-items: center;
       color: #fff;
-      white-space: nowrap;
-      padding: 20px 60px;
+      padding: 13px 60px;
       font: 32px Inria Sans, sans-serif;
     }
     @media (max-width: 991px) {
-      .div-8 {
+      .div-9 {
         white-space: initial;
         padding: 0 20px;
       }
     }
   </style>
+  </body>
+  </html>
   
